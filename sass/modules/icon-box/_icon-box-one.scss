@@ -1,0 +1,49 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.icon-box-wrapper{
+
+  &.style-one{
+
+      .icon-box{
+          text-align: left;
+
+          .icons{
+              margin: 20px 0px 10px;
+
+              a{ 
+                i{
+                  margin-right: 5px;
+                  width: 35px;
+                  height: 35px;
+                  line-height: 35px;
+                  text-align: center;
+                  border: 1px solid $border;
+                  border-radius: 10%;
+                  font-size: 14px;
+                  color: $white;
+                  background: transparent;
+                  @include transition;
+                  &:hover{
+                    color: $white;
+                    background: $primary-color;
+                    border: 1px solid $white;
+                    -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                  }
+
+                  @include sm{
+                    font-size: 12px; 
+                  }
+                }
+              }
+
+          }
+      }
+  }
+}

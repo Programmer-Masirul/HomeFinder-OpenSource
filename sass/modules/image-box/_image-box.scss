@@ -1,0 +1,52 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.recent-image-box{
+
+
+  .recent-icon-box{ 
+      margin-right: 30px;
+      .icon-text{
+        font-size: 15px;
+  
+        @include lg{ 
+        font-size: 14px;
+        }
+  
+        @include sm{
+          font-size: 13px;
+        }
+      }      
+      
+      .icon-content{ 
+          display: -webkit-box; 
+          display: -ms-flexbox; 
+          display: flex;
+          .icon{
+            margin-right: 10px;
+            i{
+              font-size: 13px;
+            }
+          }
+      
+          .content{
+          font-size: 15px;
+      
+          @include lg{ 
+          font-size: 14px;
+          }
+      
+          @include sm{
+            font-size: 11px;
+          }
+          }
+        }
+  
+    }
+}
+
+    

@@ -1,0 +1,201 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.card-box{
+
+    &.style-three{
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start; 
+        margin-bottom: 25px;
+        -webkit-box-shadow: $box-shadow;
+                box-shadow: $box-shadow;
+
+     .image-box{  
+        position: relative;
+        width: 100%; 
+        height: 0; 
+        padding-bottom: 92%;  
+        overflow: hidden; 
+
+        @include xl{
+         padding-bottom: 95%;
+        }    
+     
+        @include sm{
+         padding-bottom: 50%;
+        }    
+
+        @include xs{
+         padding-bottom: 60%;
+        }
+        img{  
+            position: absolute;
+            width: 100%; 
+            height: 100%;  
+            -o-object-fit: cover;  
+               object-fit: cover;  
+            @include transition;
+       }
+    }
+    .image-content{
+            .icon-content{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: start;
+                margin: 98px 45px 25px 45px;
+                .icon{ 
+                    margin-right: 5px;
+
+                    i{
+                        width: 40px; 
+                        height: 40px;
+                        font-size: 15px;
+                        line-height: 40px;
+                        text-align: center; 
+                        color: $primary-color;
+                        border: 1px solid $white;
+
+                        &:hover{
+                            color: $white;
+                        }
+
+                    }
+
+                }
+                .content{
+                    font-family: $primary-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: $text-color;
+
+                    @include xs{
+                        font-size: 10px;
+                        line-height: 19px;
+                    }
+                }
+
+                @include xl{ 
+                 margin: 65px 10px 5px 10px;
+                }
+
+                @include sm{ 
+                 margin: 10px 5px 1px 5px;
+                }
+            }
+
+            p{
+                font-family: $primary-font;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 25px;
+                margin: 0px 45px 0px 45px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $secondary-color;  
+
+                @include xl{
+                 margin: 0px 10px 0px 10px;
+                }
+
+                @include sm{
+                 margin: 0px 5px 0px 5px;
+                }
+
+                @include xs{
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+            }
+
+            a{
+                .icon-content{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                            justify-content: start;
+                    margin: 45px 45px 74px 45px;
+                    .content{ 
+                        font-family: $primary-font;
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        margin-right: 10px;
+                        text-align: left; 
+                        color: $primary-color;
+
+                        @include rmaxwd(424.99){
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                    }
+                    .icon{
+                        
+                        i{ 
+                            width: 40px; 
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            background: $primary-color; 
+                            color: $white;
+                            border: 1px solid $primary-color; 
+
+                            &:hover{
+                                background: $white; 
+                                color: $primary-color;
+
+                            }
+                        }
+
+                    }
+
+                    @include xl{ 
+                     margin: 25px 10px 20px 10px;
+                    }
+
+                    @include sm{ 
+                     margin: 2px 5px 10px 5px;
+                    }
+                }
+
+            }
+
+        }
+
+     &:hover{
+            .image-box{
+                img{
+                    -webkit-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                            transform: scale(1.1);
+                }
+            }
+      }    
+    } 
+
+} 

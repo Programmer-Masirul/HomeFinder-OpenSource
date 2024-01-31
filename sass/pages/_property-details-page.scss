@@ -1,0 +1,477 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.property-details {
+  padding-top: 144px;
+  padding-bottom: 114px;
+  background: $gray-30;
+
+  @include md {
+      padding: 100px 0;
+  }
+  @include sm {
+      padding-top: 70px;
+      padding-bottom: 40px;
+  } 
+  
+  // Property video area
+  .property-video-area {
+    .property-video-box{ 
+      padding: 10px 20px 30px; 
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+
+      .property-video-info-box{
+
+        .property-video{
+          width:100%;
+          height: 450px;
+
+          @include xl{
+            height: 410px;
+          }
+
+          @include md{
+            height: 350px;
+          }
+
+          @include sm{
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+
+  // Property heading area
+  .property-heading-area{
+    .heading-content-details{
+      padding: 10px 20px 30px;
+      margin-top: 50px; 
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+
+      .heading-content-icon{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        .heading-content{
+    
+         .details{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: start;
+    
+            .icon-content{ 
+                margin-right: 25px;
+                
+              .icon{
+                font-size: 14px;
+              }
+              .content{
+                font-size: 14px;
+  
+                @include sm{
+                  font-size: 14px;
+                }
+  
+                @include rmaxwd(476){
+                  font-size: 13px;
+                }
+              }
+  
+              @include sm{
+                width: 100%;
+              }
+            }
+         }
+    
+        }
+    
+        .heading-icon{  
+  
+            i{
+              font-size: 15px;
+            }
+    
+            .value{
+                text-align: left;
+                font-family:$primary-font;
+                margin-right: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                color: $secondary-color;
+  
+                @include sm{ 
+                 font-size: 15px;
+                }
+            }
+    
+            span{
+                font-family:$primary-font;
+                font-size: 20px;
+                font-weight: 700;
+                color: $primary-color;
+                font-size: 17px;
+            }
+        }
+  
+   
+      }
+
+      @include lg{ 
+      margin-top: 40px; 
+      } 
+
+      @include rmaxwd(992){
+        margin-top: 30px;
+      }
+
+
+    }
+  }
+  
+  // Property description area
+  .property-description-area{
+  
+      .property-description{
+          padding: 10px 20px 30px;
+          margin-top: 50px;
+          background: $white;
+          -webkit-box-shadow: $box-shadow;
+                  box-shadow: $box-shadow;
+          .description{
+              font-family: $primary-font;
+              font-size: 15px;
+              color: $text-color;
+
+              @include sm{
+                font-size: 14px;
+              }
+
+              @include rmaxwd(476){
+                font-size: 13px;
+              }
+          }
+
+          @include lg{ 
+          margin-top: 40px; 
+          } 
+    
+          @include rmaxwd(992){
+            margin-top: 30px;
+          }
+    
+  
+      }
+  }
+
+  // Property details area
+  .property-details-area{
+    .property-details-box{
+      padding: 10px 20px 30px;
+      margin-top: 50px;
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+  
+      .property-details-info-box{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: start;
+          margin-right: 25px;
+    
+        .property-info{
+          margin-bottom: 25px;
+         .info-details{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: start;
+          margin-right: 25px;
+    
+          .info{
+            font-family: $primary-font;
+            margin-right: 7px;
+            font-size: 14px;
+            font-weight: 600;
+
+            @include sm{
+              font-size: 14px;
+            }
+
+            @include rmaxwd(476){
+              font-size: 13px;
+            }
+          }
+    
+          .details{ 
+            font-family: $primary-font;
+            font-size: 14px;
+            font-weight: 400;
+
+            @include sm{
+              font-size: 14px;
+            }
+
+            @include rmaxwd(476){
+              font-size: 13px;
+            }
+          }
+         }
+        }
+      }
+
+      @include lg{ 
+      margin-top: 40px; 
+      } 
+
+      @include rmaxwd(992){
+        margin-top: 30px;
+      }
+
+  
+    }
+  } 
+  
+  // Property facilities area
+  .facilities-area{
+    .facility-box{
+      padding: 10px 20px 30px;
+      margin-top: 50px;
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+  
+      .facility-info-box{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: start;
+          margin-right: 25px;
+    
+        .facility-info{ 
+          margin-bottom: 25px;
+         .icon-details{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: start;
+          margin-right: 25px;
+    
+          .icon{
+            font-family: $primary-font;
+            margin-right: 7px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $primary-color;
+
+            @include sm{
+              font-size: 14px;
+            }
+
+            @include rmaxwd(476){
+              font-size: 13px;
+            }
+          }
+    
+          .details{ 
+            font-family: $primary-font;
+            font-size: 14px;
+            font-weight: 400;
+
+            @include sm{
+              font-size: 14px;
+            }
+
+            @include rmaxwd(476){
+              font-size: 13px;
+            }
+          }
+         }
+        }
+      }
+  
+
+      @include lg{ 
+        margin-top: 40px; 
+        } 
+  
+        @include rmaxwd(992){
+          margin-top: 30px;
+        }
+  
+    }
+  }
+
+  // Floor plan area
+  .floor-plan-area {
+    .floor-plan-box{ 
+      padding: 10px 20px 30px;
+      margin-top: 50px;
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+
+      .floor-plan-info-box{
+
+        .floor-plan{
+          width:100%;
+          height: 450px;
+
+          @include xl{
+            height: 410px;
+          }
+
+          @include md{
+            height: 350px;
+          }
+
+          @include sm{
+            height: 280px;
+          }
+        }
+      }
+
+      @include lg{ 
+      margin-top: 40px; 
+      } 
+
+      @include rmaxwd(992){
+        margin-top: 30px; 
+      }
+
+    }
+  }
+
+  // Map area
+  .map-area {
+    .map-box{ 
+      padding: 10px 20px 30px;
+      margin-top: 50px;
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+
+      .map-info-box{
+
+        .map{
+          width:100%;
+          height: 450px;
+
+          @include xl{
+            height: 410px;
+          }
+
+          @include md{
+            height: 350px;
+          }
+
+          @include sm{
+            height: 280px;
+          }
+        }
+      }
+
+      @include lg{ 
+      margin-top: 40px; 
+      } 
+
+      @include rmaxwd(992){
+        margin-top: 30px;
+      }
+
+    }
+  }
+
+  // Customer review area
+  .customer-reviews-area{
+    .summary-and-customer-reviews{
+      padding: 10px 20px 30px;
+      margin-top: 50px;
+      background: $white;
+      -webkit-box-shadow: $box-shadow;
+              box-shadow: $box-shadow;
+      .review-summary{
+        .rating-area{
+          .star{
+              padding: 40px 60px;
+              background: $gray-30;
+              text-align: center;
+            h2{
+              font-size: 70px;
+              font-weight: 500;
+              font-family:$primary-font;
+              color: $black;
+            }
+
+            i{
+              color: $primary-color;
+            }
+
+            h6{
+              font-size: 15px;
+              font-weight: 300;
+              font-family: $primary-font;
+              color: $text-color;
+
+
+              @include sm{
+                font-size: 14px;
+              }
+  
+              @include rmaxwd(476){
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      .customer-reviews{
+        h2{
+          margin: 20px 0px 0px;
+        }
+
+        .recent-reviews{
+          border-bottom: 1px solid $gray-30;
+        }
+      }
+      @include lg{ 
+      margin-top: 40px; 
+      } 
+
+      @include rmaxwd(992){ 
+        margin: 30px 0px;
+      }
+    }
+  }
+
+}

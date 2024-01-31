@@ -1,0 +1,113 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.card-wrapper{
+    &.style-one{
+     .property-card{
+      .property-box{ 
+       position: relative;
+       overflow: hidden;
+   
+       .top-content{
+           position: absolute;
+           top: 0;
+           left: 0;
+           padding: 25px 20px 10px;
+           padding-right: 50px;
+           border-radius: 0px 0px 90px;
+           background: $primary-color;
+           -webkit-transform: translateY(-10%);
+               -ms-transform: translateY(-10%);
+                   transform: translateY(-10%);
+           z-index: 1;
+           @include transition;
+           h4{
+               font-family: $secondary-font;
+               font-size: 20px;
+               line-height: 0px;
+               font-weight: 700;
+               color: $white;
+           } 
+       }
+   
+       .center-content{
+           position: absolute;
+           top: 50%;
+           left: 50%;    
+           -webkit-transform: translate(-50%,-50%);    
+               -ms-transform: translate(-50%,-50%);    
+                   transform: translate(-50%,-50%);
+           opacity: 0;
+           visibility: hidden;
+           z-index: 1;
+           @include transition;
+       }
+   
+       .bottom-content{
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           padding: 15px 20px;
+           padding-left: 50px;
+           border-radius: 90px 0px 0px;
+           background: $primary-color;
+           -webkit-transform: translateY(40%);
+               -ms-transform: translateY(40%);
+                   transform: translateY(40%);
+           z-index: 1;
+           @include transition;
+           h4{
+               font-family: $secondary-font;
+               font-size: 20px;
+               line-height: 28px;
+               font-weight: 700;
+               color: $white;
+           }
+           h6{
+               font-family: $secondary-font;
+               font-size: 10px;
+               line-height: 15px;
+               margin-bottom: 0px;
+               font-weight: 400;
+               color: $white;
+   
+           }
+       }
+   
+       &:hover{
+   
+       .image{
+               
+           img {
+               &:before {
+                   opacity: 0;
+               }
+           }
+         }
+       }
+   
+       &:hover{
+           .top-content{
+               -webkit-transform: translateY(0%);
+                   -ms-transform: translateY(0%);
+                       transform: translateY(0%);
+               padding: 18px 30px 15px; 
+           }
+           .center-content{
+               opacity: 1;
+               visibility: visible;
+           }
+           .bottom-content{
+               -webkit-transform: translateY(0%);
+                   -ms-transform: translateY(0%);
+                       transform: translateY(0%);
+           }
+       }
+      }
+     }
+    }
+   }

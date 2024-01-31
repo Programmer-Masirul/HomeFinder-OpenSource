@@ -1,0 +1,56 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.subscribe-section{
+    padding: 80px 0px; 
+    .subscribe-wrapper{
+        position: relative;
+        padding: 50px 10px;
+        background: $white;
+        border-radius: 5px; 
+        text-align: center;
+        -webkit-box-shadow: $box-shadow;
+                box-shadow: $box-shadow;
+
+    .subscribe-area-content{  
+        h5{ 
+            position: absolute;
+            top: -15%;
+            left: 40%;
+            padding: 20px;
+            border-radius:50px 50px 0px 0px ;
+            background: $primary-color;
+            color: $white;
+            font-family: $secondary-font;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        h2{   
+            text-align: center;
+            margin-top: 50px; 
+            color: $black;
+        }
+      
+    }
+
+    .subscribe-area-button{  
+        text-align: center;
+        margin-top: 50px; 
+        .input-group{
+            input{
+                background: $white;
+                border: 1px solid $border;
+                padding: 5px;
+                width: 250px;
+            }
+        }
+      
+    }
+
+    }
+}

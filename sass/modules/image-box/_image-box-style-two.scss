@@ -1,0 +1,51 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+.recent-image-box{
+  &.style-two{
+      .recent-comment-box{ 
+          margin-right: 30px;
+          .commenter{
+            font-size: 15px;
+            font-family: $primary-font;
+            font-weight: 500; 
+      
+            @include lg{ 
+            font-size: 14px;
+            }
+      
+            @include sm{
+              font-size: 13px;
+            }
+          }      
+          
+          .comment-content{ 
+              display: -webkit-box; 
+              display: -ms-flexbox; 
+              display: flex; 
+          
+              .content{
+              font-size: 13px;
+              font-family: $primary-font;
+              font-weight: 300; 
+          
+              @include lg{ 
+              font-size: 12px;
+              }
+          
+              @include sm{
+                font-size: 11px;
+              }
+              }
+            }
+      
+        }
+  }
+
+}
+
+    
