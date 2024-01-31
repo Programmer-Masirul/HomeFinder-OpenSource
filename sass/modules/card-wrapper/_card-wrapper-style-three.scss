@@ -1,0 +1,37 @@
+.card-wrappers {
+
+    &.style-three {
+        .property-list-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: $box-shadow;
+
+            @include md {
+                display: grid; 
+             }
+
+            .image {
+                img {}
+            }
+
+            .card-body {
+                padding: 10px 20px;
+
+                .details{
+                    margin-bottom: 16px;
+                    .details-row{
+                        .icon-content{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+
+                @include md {
+                    padding: 50px 16px;
+                 }
+            }
+
+        }
+    }
+}

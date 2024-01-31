@@ -71,7 +71,7 @@ h1 {
   letter-spacing: 0px; 
   
 
-  @include md{ 
+  @include xl{ 
     font-size: 52px; 
     line-height: 57.2px;
   }
@@ -83,7 +83,7 @@ font-weight: 700;
 line-height: 58px;
 letter-spacing: 0px; 
 
-  @include md{ 
+  @include xl{ 
     font-size: 45px; 
     line-height: 54px;
   }
@@ -95,7 +95,7 @@ h3 {
   line-height: 43px;
   letter-spacing: 0px; 
 
-  @include md{ 
+  @include xl{ 
     font-size: 33px; 
     line-height: 39.6px;
   }
@@ -108,7 +108,7 @@ h4 {
   line-height: 34px;
   letter-spacing: 0px;  
 
-  @include md{ 
+  @include xl{ 
     font-size: 21px; 
     line-height: 29.4px; 
   }
@@ -121,7 +121,7 @@ h5 {
   line-height: 27px;
   letter-spacing: 0px;   
 
-  @include md{ 
+  @include xl{ 
     font-size: 15px; 
     line-height: 22.5px;
   }
@@ -134,7 +134,7 @@ h6 {
   line-height: 24px;
   letter-spacing: 0px;   
 
-  @include md{ 
+  @include xl{
     font-size: 13px; 
     line-height: 19.5px;
   }
